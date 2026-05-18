@@ -1,0 +1,16 @@
+[
+{
+  "modid": "method",
+  "name": "methodcode",
+  "description": "Method is a Collection of code",
+  "version": "0.1.0",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/danmaster2/MethodClient",
+  "updateUrl": "https://github.com/danmaster2/MethodClient",
+  "authorList": ["J"],
+  "credits": "J",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -189,6 +189,10 @@ Modules commonly used for crystal PvP:
 | 63 | **FrogHack** | `froghack/` | Custom | — | — |
 | 64 | **Project Dupermen** | `project-dupermen/` | Custom | — | — |
 | 65 | **Qubit** | `qubit/` | Custom | — | — |
+| 66 | **ClientBase** | `clientbase/` | Unlicense | 44+ | `RSHIFT` |
+| 67 | **MethodClient** | `methodclient/` | WTFPL | 19+ | — |
+| 68 | **3arthh4ck (Original)** | `3arthh4ck-old/` | MIT | 219+ | `RSHIFT` |
+| 69 | **CliNet** | `clinet/` | LGPL-3.0 | 1+ | `Y` |
 
 ## Quick Reference :memo:
 
@@ -224,7 +228,7 @@ This is an educational collection for reference and research purposes only. Use 
 ---
 
 ## Stats :bar_chart:
-- **Total clients:** 65
+- **Total clients:** 69
 - **Total size:** ~300 MB
 - **Licenses:** MIT, GPL-3.0, LGPL-3.0, AGPL-3.0, Apache-2.0, WTFPL, Custom
 - **Languages:** Java, Kotlin, GLSL (shaders)
