@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "compatibilityLevel": "JAVA_8",
+  "package": "com.based.lynx.mixin.mixins",
+  "refmap": "mixins.lynx.refmap.json",
+  "mixins": [
+    "render.gui.MixinGuiMainMenu"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "verbose": false,
+  "required": true,
+  "compatibilityLevel": "JAVA_8",
+  "package": "dev.rabies.vox.mixin",
+  "refmap": "mixins.vox.refmap.json",
+  "client": [
+    "MixinEntityPlayerSP",
+    "MixinEntityRenderer",
+    "MixinFontRenderer",
+    "MixinGuiInGame",
+    "MixinGuiSubtitleOverlay",
+    "MixinKeyBinding",
+    "MixinMinecraft",
+    "MixinNetworkManager",
+    "MixinRenderLivingBase",
+    "MixinRenderManager",
+    "MixinEntity"
+  ]
+}

@@ -1,270 +1,216 @@
 # Minecraft 1.12.2 HvH Client Collection
 
-A curated collection of open-source Minecraft 1.12.2 utility mods designed for anarchy servers and HvH (Hacker vs Hacker) crystal/sword PvP.
+> A curated collection of **50 open-source** Minecraft 1.12.2 utility mods designed for anarchy servers and HvH (Hacker vs Hacker) crystal/sword PvP.
 
-## Included Clients
+---
 
-### 3arthh4ck
-- **Repository:** [3arthqu4ke/3arthh4ck](https://github.com/3arthqu4ke/3arthh4ck) (original, archived)
-- **Repository:** [3arthh4ckDevelopment/3arthh4ck-client](https://github.com/3arthh4ckDevelopment/3arthh4ck-client) (continued)
-- **License:** MIT
-- **Description:** Utility mod and proxy server for 1.12.2 anarchy PvP. Originally developed by 3arthqu4ke.
-- **Directories:** `3arthh4ck-original/`, `3arthh4ck-client/`
+## Quick Start Guide :rocket:
 
-### ThunderHack+
-- **Repository:** [Gentleman2292/ThunderHackPlus](https://github.com/Gentleman2292/ThunderHackPlus)
-- **License:** Based on GPL-3.0 components
-- **Description:** 1.12.2 utility mod for Crystal/Sword HvH. Code incorporates elements from Wurst+3, Seppuku, Konas, 3arthh4ck, and others.
-- **Directory:** `ThunderHackPlus/`
+### 1. Prerequisites :wrench:
+- Minecraft **1.12.2** (Java Edition)
+- Minecraft **Forge 14.23.5.2855** (latest 1.12.2 build) — [download here](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.12.2.html)
+- **Java 8** or higher (some clients may need **Java 17**)
 
-### GameSense
-- **Repository:** [IUDevman/gamesense-client](https://github.com/IUDevman/gamesense-client)
-- **License:** GPL-3.0
-- **Description:** Minecraft 1.12.2 utility mod for anarchy and crystal PvP. Discontinued since May 2021.
-- **Directory:** `gamesense-client/`
-
-### SpiderSense
-- **Repository:** [HausemasterIssue/spidersense](https://github.com/HausemasterIssue/spidersense)
-- **License:** GPL-3.0
-- **Description:** A discontinued continuation of the GameSense client.
-- **Directory:** `spidersense/`
-
-### SalHack
-- **Repository:** [ionar2/spidermod](https://github.com/ionar2/spidermod) / [ionar2/salhack](https://github.com/ionar2/salhack)
-- **Repository (Creepy):** [CreepyOrb924/creepy-salhack](https://github.com/CreepyOrb924/creepy-salhack)
-- **License:** Custom open-source
-- **Description:** Utility mod for anarchy servers. Originally private, later made open-source.
-- **Directories:** `SalHack-original/`, `SalHack-alt/`, `creepy-salhack/`
-
-## Requirements
-
-- Minecraft 1.12.2
-- Minecraft Forge 14.23.5.2855 (latest 1.12.2 build)
-
-## Installation
-
-1. Install Minecraft Forge for 1.12.2
-2. Build the desired client using Gradle (`gradlew build`)
-3. Place the built `.jar` from `build/libs/` into your `.minecraft/mods/` folder
-4. Launch Minecraft with the Forge profile
-
-## Building
-
-Each client includes a Gradle wrapper. Build with:
-
+### 2. Build a Client :hammer_and_wrench:
 ```bash
 cd <client-directory>
 ./gradlew build
 ```
+The compiled `.jar` will be in `build/libs/`.
 
-The output `.jar` will be located in `build/libs/`.
+> :bulb: If `gradlew` fails, try `chmod +x gradlew` first, or use `gradle build` if you have Gradle installed globally.
 
-### Lambda Legacy
-- **Repository:** [lambda-client/lambda-legacy](https://github.com/lambda-client/lambda-legacy)
-- **License:** LGPL-3.0
-- **Description:** Free, open-source 1.12.2 utility mod for anarchy servers with a visionary plugin system. Successor to KAMI Blue. One of the most well-known free anarchy clients.
-- **Directory:** `lambda-legacy/`
+### 3. Install :package:
+1. Locate your `.minecraft` folder:
+   - **Windows:** `%appdata%/.minecraft`
+   - **Linux/macOS:** `~/.minecraft`
+2. Create a `mods` folder if it doesn't exist
+3. Copy the built `.jar` into `.minecraft/mods/`
+4. Launch Minecraft using the **Forge** profile
 
-### KAMI Blue
-- **Repository:** [kami-blue/client](https://github.com/kami-blue/client)
-- **License:** LGPL-3.0
-- **Description:** Continuation of 1.12.2 KAMI. Known for excellent elytra flight bypasses on 2b2t with Baritone integration.
-- **Directory:** `kami-blue/`
+---
 
-### TrollHack
-- **Repository:** [Luna5ama/TrollHack](https://github.com/Luna5ama/TrollHack)
-- **License:** GPL-3.0
-- **Description:** Strong hack for anarchy servers with excellent CrystalAura, various bypasses, and a wide array of combat/utility modules.
-- **Directory:** `trollhack/`
+## Usage Guide :video_game:
 
-### Wurst+3
-- **Repository:** [WurstPlus/wurst-plus-three](https://github.com/WurstPlus/wurst-plus-three)
-- **License:** AGPL-3.0
-- **Description:** 1.12.2 Forge client made for crystal PvP. Popular free alternative heavily used in the HvH community.
-- **Directory:** `wurst-plus-three/`
+### Opening the ClickGUI
+Different clients use different keybinds. Here are the most common ones:
 
-### Cosmos
-- **Repository:** [momentumdevelopment/cosmos](https://github.com/momentumdevelopment/cosmos)
-- **License:** GPL-3.0
-- **Description:** Free, open-source 1.12.2 Forge PvP client aimed at the anarchy community with CrystalAura, KillAura, Surround and more.
-- **Directory:** `cosmos/`
+| Keybind | Clients |
+|---------|---------|
+| `RSHIFT` | Cosmos, GameSense, Temple Client, Gate Client, Spark Client, Kami Blue |
+| `LSHIFT` (Left Arrow equivalent) | SalHack, Creepy SalHack |
+| `P` | 3arthh4ck (original), Lynx, ThunderHack+ |
+| `Y` | Lambda Legacy, KAMI |
+| `O` | GameSense+ (forks) |
+| `BACKSLASH` (`\`) | FamilyFunPack |
+| `GRAVE` (`` ` ``) | Temple Client (HUD toggle) |
+| `J` | Claudius |
+| `Right GUI` settings button | TutorialClient |
 
-### Temple Client Legacy
-- **Repository:** [TempleDevelopment/Temple-Client-Legacy](https://github.com/TempleDevelopment/Temple-Client-Legacy)
-- **License:** GPL-3.0
-- **Description:** Actively maintained free and open-source utility mod for the anarchy experience. Supports sword/crystal PvP.
-- **Directory:** `temple-client/`
+> :mag: Can't find the keybind? Check the client's source code for `ClickGui` module or look in the `ModuleManager` class.
 
-### CookieClient
-- **Repository:** [bebeli555/CookieClient](https://github.com/bebeli555/CookieClient)
-- **License:** None specified
-- **Description:** Utility client for anarchy servers. Notable for its ElytraBot pathfinding module independent of Baritone.
-- **Directory:** `cookieclient/`
+### Command Prefixes
+Most clients use a chat-based command system:
 
-### Ferox
-- **Repository:** [olliem5/ferox](https://github.com/olliem5/ferox)
-- **License:** GPL-3.0
-- **Description:** An old private client, now made public. Forge 1.12.2 anarchy client with combat modules.
-- **Directory:** `ferox/`
+| Prefix | Clients |
+|--------|---------|
+| `.` (period) | 3arthh4ck, ThunderHack+, Temple Client, Gate Client, Sushi Client |
+| `+` (plus) | 3arthh4ck (commands), Lambda Legacy |
+| `*` (asterisk) | Cosmos |
+| `!` (exclamation) | Claudius |
+| `-` (hyphen) | Seppuku |
+| `#` (hash) | ForgeHax |
 
-### ForgeWurst
-- **Repository:** [Wurst-Imperium/ForgeWurst](https://github.com/Wurst-Imperium/ForgeWurst)
-- **License:** GPL-3.0
-- **Description:** Official Wurst client ported to run as a Forge mod rather than a standalone. Classic Wurst modules.
-- **Directory:** `forgewurst/`
+**Common commands:**
+- `.bind <module> <key>` — Bind a module to a key
+- `.toggle <module>` — Toggle a module on/off
+- `.set <module> <setting> <value>` — Change a setting
+- `.help` or `.commands` — List all available commands
 
-### Gate Client
-- **Repository:** [TheF1xer/GateClient-1.12.2](https://github.com/TheF1xer/GateClient-1.12.2)
-- **License:** Custom open-source
-- **Description:** Free and open-source Forge utility mod with preset system, click GUI (Right-Shift), command system, and various utility/combat modules.
-- **Directory:** `gate-client/`
+### Module Categories :card_index_dividers:
+Most clients organize modules into these categories:
+- :crossed_swords: **Combat** — KillAura, AutoCrystal, Surround, AutoTrap, HoleFill
+- :runner: **Movement** — Speed, Flight, Step, NoSlow, Velocity
+- :art: **Render** — ESP, Tracers, Nametags, Chams, Fullbright
+- :jigsaw: **Misc** — AntiAFK, AutoTool, ChatSuffix, Spammer
+- :boom: **Exploits** — Timer, TickShift, PacketCanceller, Blink
+- :eyes: **Client** — ClickGUI, HUD Editor, Colors
 
-### Havook
-- **Repository:** [rayferric/havook-1.12.2](https://github.com/rayferric/havook-1.12.2)
-- **License:** MIT
-- **Description:** Lightweight cleaned client for Minecraft Forge 1.12.2 with MIT license.
-- **Directory:** `havook/`
+### Building Tips :construction:
+- Some clients require **JDK 8**, others need **JDK 17** (e.g., 3arthh4ck-client, Ares). Check the `build.gradle` for `sourceCompatibility` / `targetCompatibility`.
+- If you get `OutOfMemoryError`, add to `gradle.properties`: `org.gradle.jvmargs=-Xmx2g`
+- For Windows users, use `gradlew.bat` instead of `./gradlew`
 
-### Method Client
-- **Repository:** [danmaster2/MethodClient](https://github.com/danmaster2/MethodClient)
-- **License:** WTFPL
-- **Description:** A clean new client for Minecraft 1.12.2 using the latest Forge version (14.23.5.2855).
-- **Directory:** `method-client/`
+---
 
-### Seppuku
-- **Repository:** [seppukudevelopment/seppuku](https://github.com/seppukudevelopment/seppuku)
-- **License:** Custom
-- **Description:** Lightweight, dependency-free Minecraft 1.12.2 Forge hack oriented towards anarchy servers with external plugin system.
-- **Directory:** `seppuku/`
+## How to Use in HvH :crossed_swords:
 
-### ForgeHax
-- **Repository:** [fr1kin/ForgeHax](https://github.com/fr1kin/ForgeHax)
-- **License:** MIT
-- **Description:** Popular Minecraft cheat running as a Forge mod. Well-known in the anarchy community with comprehensive module set.
-- **Directory:** `forgehax/`
+### Crystal PvP Setup :crystal_ball:
+Modules commonly used for crystal PvP:
+1. **AutoCrystal** — Automatically places and detonates end crystals
+2. **Surround** — Places blocks around you to prevent crystal damage
+3. **OffHand** — Automatically switches between crystal/totem in offhand
+4. **AutoTrap** / **CrystalTrap** — Traps enemies in crystals
+5. **Velocity** — Reduces/removes knockback
+6. **NoSlow** — Prevents slowdown from eating/holding items
 
-### KAMI (original)
-- **Repository:** [zeroeightysix/KAMI](https://github.com/zeroeightysix/KAMI)
-- **License:** LGPL-3.0
-- **Description:** The original KAMI by zeroeightysix. The foundation that KAMI Blue was built upon. Forge 1.12.2.
-- **Directory:** `kami/`
+### Sword PvP Setup :dagger:
+1. **KillAura** — Automatically attacks nearby enemies
+2. **Criticals** — Ensures every hit is a critical hit
+3. **AutoArmor** — Automatically equips best armor
+4. **Speed** — Movement speed boost
+5. **WTap** / **STap** — Sprint-reset for combo advantage
 
-### MoneyMod
-- **Repository:** [moneymod/moneymod](https://github.com/moneymod/moneymod)
-- **License:** Custom
-- **Description:** 1.12.2 crystal PvP modification. Focused on combat mechanics for anarchy servers.
-- **Directory:** `moneymod/`
+### Anarchy Server Essentials :skull:
+1. **AutoLog** — Automatically disconnect on low health
+2. **AntiBot** — Filters out bot entities
+3. **PortalChat** — Chat while in nether portals
+4. **XCarry** — Carry items in crafting grid
+5. **EntityDesync** — Dupe-related exploits
+6. **Timer** — Speed up game ticks
 
-### Momentum
-- **Repository:** [momentumdevelopment/momentum](https://github.com/momentumdevelopment/momentum)
-- **License:** GPL-3.0
-- **Description:** Free, open-source 1.12.2 PvP client for the anarchy community. Compatible with Phobos, Pyro, Future, and others.
-- **Directory:** `momentum/`
+---
 
-### Gish Code 1.12.2
-- **Repository:** [GishReloaded/Gish-Code-1.12.2](https://github.com/GishReloaded/Gish-Code-1.12.2)
-- **License:** Custom
-- **Description:** Full-featured 1.12.2 Forge hacked client with extensive modules including Rage, AutoTotem, ESP variants, Scaffold, Nuker, and more.
-- **Directory:** `gish-code/`
+## Full Client List :books:
 
-### SpectClient
-- **Repository:** [XeonLyfe/SpectClient](https://github.com/XeonLyfe/SpectClient)
-- **License:** MIT
-- **Description:** Minecraft 1.12.2 hacked client inspired by Osiris, Impact, and SalHack. Custom event system and click GUI.
-- **Directory:** `spectclient/`
+### :first_quarter_moon: Tier 1 — Most Popular
+| # | Client | Directory | License | Stars | Default GUI |
+|---|--------|-----------|---------|-------|-------------|
+| 1 | **3arthh4ck** (original) | `3arthh4ck-original/` | MIT | 220+ | `P` |
+| 2 | **3arthh4ck** (continued) | `3arthh4ck-client/` | MIT | 40+ | `P` |
+| 3 | **LiquidBounce** (legacy) | `liquidbounce-legacy/` | GPL-3.0 | 2200+ | — |
+| 4 | **Lambda Legacy** | `lambda-legacy/` | LGPL-3.0 | 616+ | `Y` |
+| 5 | **ForgeHax** | `forgehax/` | MIT | 494+ | — |
+| 6 | **KAMI Blue** | `kami-blue/` | LGPL-3.0 | 378+ | `RSHIFT` |
+| 7 | **Seppuku** | `seppuku/` | Custom | 276+ | `RSHIFT` |
+| 8 | **KAMI** (original) | `kami/` | LGPL-3.0 | 245+ | `Y` |
+| 9 | **GameSense** | `gamesense-client/` | GPL-3.0 | 208+ | `RSHIFT` |
+| 10 | **Wurst+3** | `wurst-plus-three/` | AGPL-3.0 | 198+ | `RSHIFT` |
+| 11 | **TrollHack** | `trollhack/` | GPL-3.0 | 198+ | — |
+| 12 | **Postman** | `postman-legacy/` | MIT | 176+ | — |
+| 13 | **Cosmos** | `cosmos/` | GPL-3.0 | 145+ | `RSHIFT` |
 
-### Impact 3.0 (community port)
-- **Repository:** [Cats-Club/Impact-3.0](https://github.com/Cats-Club/Impact-3.0)
-- **License:** Custom
-- **Description:** Community port of the popular Impact Client to 1.12.2 Forge with improvements.
-- **Directory:** `impact-3.0/`
+### :waxing_gibbous_moon: Tier 2 — Well Known
+| # | Client | Directory | License | Stars | Default GUI |
+|---|--------|-----------|---------|-------|-------------|
+| 14 | **FamilyFunPack** | `familyfunpack/` | Custom | 104+ | `\` |
+| 15 | **Gish Code 1.12.2** | `gish-code/` | Custom | 98+ | — |
+| 16 | **CookieClient** | `cookieclient/` | — | 90+ | — |
+| 17 | **PepsiMod** | `pepsimod/` | Custom | 171+ | — |
+| 18 | **Momentum** | `momentum/` | GPL-3.0 | 83+ | — |
+| 19 | **SalHack** | `SalHack-original/`, `SalHack-alt/` | Custom | — | `LSHIFT` |
+| 20 | **Creepy SalHack** | `creepy-salhack/` | Custom | 75+ | `LSHIFT` |
+| 21 | **Konas** (archive) | `konas/` | Custom | 82+ | — |
+| 22 | **Ferox** | `ferox/` | GPL-3.0 | 60+ | — |
+| 23 | **MoneyMod** | `moneymod/` | Custom | 57+ | — |
+| 24 | **ForgeWurst** | `forgewurst/` | GPL-3.0 | 46+ | — |
+| 25 | **Gate Client** | `gate-client/` | Custom | 34+ | `RSHIFT` |
 
-### TutorialClient
-- **Repository:** [bush1root/TutorialClient](https://github.com/bush1root/TutorialClient)
-- **License:** Custom
-- **Description:** Minecraft hacked client for 1.12.2 designed as a learning/teaching resource for understanding mod internals.
-- **Directory:** `tutorialclient/`
+### :full_moon: Tier 3 — Notable
+| # | Client | Directory | License | Stars | Default GUI |
+|---|--------|-----------|---------|-------|-------------|
+| 26 | **Spark Client** | `spark-client/` | MIT | 38+ | `RSHIFT` |
+| 27 | **Temple Client Legacy** | `temple-client/` | GPL-3.0 | 37+ | `RSHIFT` |
+| 28 | **Havook** | `havook/` | MIT | 32+ | — |
+| 29 | **Vox Client** | `vox-client/` | MIT | 29+ | — |
+| 30 | **Sushi Client** | `sushi-client/` | — | 25+ | `RSHIFT` |
+| 31 | **Lynx** | `lynx/` | MIT | 23+ | `P` |
+| 32 | **ThunderHack+** | `ThunderHackPlus/` | GPL-3.0 | — | `P` |
+| 33 | **SpiderSense** | `spidersense/` | GPL-3.0 | 21+ | `RSHIFT` |
+| 34 | **Method Client** | `method-client/` | WTFPL | 19+ | — |
+| 35 | **Impact 3.0** (port) | `impact-3.0/` | Custom | 18+ | — |
+| 36 | **Noteless** | `noteless/` | GPL-3.0 | — | — |
+| 37 | **LavaHack-Forge** | `lavahack-forge/` | Custom | — | — |
+| 38 | **LiquidBounce++** | `liquidbounce-plusplus/` | GPL-3.0 | — | — |
+| 39 | **SpectClient** | `spectclient/` | MIT | 11+ | — |
+| 40 | **BreadClient** | `breadclient/` | Custom | — | — |
+| 41 | **Misericordia** | `misericordia/` | MIT | — | — |
+| 42 | **Hes0y4m** | `hes0y4m/` | Custom | — | `P` |
+| 43 | **Exeter** (fork) | `exeter/` | GPL-3.0 | — | — |
+| 44 | **Phobos** (archive) | `phobos-archive/` | GPL-3.0 | — | — |
+| 45 | **Claudius** | `claudius/` | — | 14+ | `J` |
+| 46 | **OnigiriClient** | `onigiriclient/` | — | 7+ | — |
+| 47 | **FencingFPlusTwo** | `fencingfplustwo/` | Custom | — | — |
+| 48 | **Postman Reborn** | `postman-reborn/` | MIT | — | — |
+| 49 | **TutorialClient** | `tutorialclient/` | Custom | — | — |
 
-### FencingFPlusTwo
-- **Repository:** [FencingF/FencingFPlusTwo](https://github.com/FencingF/FencingFPlusTwo)
-- **License:** Custom
-- **Description:** Official FencingF+2 client source for 1.12.2 Forge.
-- **Directory:** `fencingfplustwo/`
+---
 
-### Konas (archive)
-- **Repository:** [Eralp232/KonasClient](https://github.com/Eralp232/KonasClient)
-- **License:** Custom
-- **Description:** Unofficial archive of Konas Client with buildable source code for 1.12.2 Forge. Versions 0.8, 0.10.5, 1.0.1.
-- **Directory:** `konas/`
+## Quick Reference :memo:
 
-### Exeter (1.12.2 fork)
-- **Repository:** [evelyn-gosselin/Exeter-1.12.2-fork](https://github.com/evelyn-gosselin/Exeter-1.12.2-fork)
-- **License:** GPL-3.0
-- **Description:** Port of the Exeter utility mod to Minecraft 1.12.2 Forge with cleaned-up decompiled code.
-- **Directory:** `exeter/`
+### ClickGUI Keybinds by Client
+| Key | Clients |
+|-----|---------|
+| `RSHIFT` | Cosmos, GameSense, Temple Client, Gate Client, Spark Client, Kami Blue, Seppuku, Sushi Client |
+| `P` | 3arthh4ck, ThunderHack+, Lynx, Hes0y4m |
+| `Y` | Lambda Legacy, KAMI |
+| `LSHIFT` | SalHack, Creepy SalHack |
+| `J` | Claudius |
+| `\` | FamilyFunPack |
+| `Right GUI` | TutorialClient |
 
-### LavaHack-Forge
-- **Repository:** [TheKisDevs/LavaHack-Forge](https://github.com/TheKisDevs/LavaHack-Forge)
-- **License:** Custom
-- **Description:** Full stack Minecraft cheat for anarchy servers with 200+ modules. Forge edition.
-- **Directory:** `lavahack-forge/`
+### Common Issues & Fixes :bug:
+| Issue | Fix |
+|-------|-----|
+| `java.lang.OutOfMemoryError` | Allocate more RAM in launcher (JVM args: `-Xmx2G -Xms1G`) |
+| `NoSuchMethodError` or `ClassNotFoundException` | Wrong Forge version — use **14.23.5.2855** |
+| `Gradle sync failed` | Run `./gradlew clean` then `./gradlew build` again |
+| `Could not find method compile()` | Client uses old Gradle — replace `compile` with `implementation` in `build.gradle` |
+| Crash on startup | Delete `.minecraft/config/<client-name>` folder |
+| Mixin errors | Make sure no other Forge mods conflict; try a clean mods folder |
 
-### Noteless
-- **Repository:** [wuyan1337/Noteless](https://github.com/wuyan1337/Noteless)
-- **License:** GPL-3.0
-- **Description:** Minecraft Forge 1.12.2 hacked client based on Pride. GPL-3.0 licensed.
-- **Directory:** `noteless/`
+---
 
-### Misericordia
-- **Repository:** [Halqq/misericordia-client](https://github.com/Halqq/misericordia-client)
-- **License:** MIT
-- **Description:** In-development Forge 1.12.2 hacked mod with focus on visuals and client GUIs.
-- **Directory:** `misericordia/`
-
-### Postman (legacy)
-- **Repository:** [srgantmoomoo/postman](https://github.com/srgantmoomoo/postman) (legacy branch)
-- **License:** MIT
-- **Description:** Minecraft anarchy client with clean click GUI (PanelStudio), combat, render, and movement modules for Forge 1.12.2.
-- **Directory:** `postman-legacy/`
-
-### Postman Reborn
-- **Repository:** [DRNUMBER1/postman-reborn](https://github.com/DRNUMBER1/postman-reborn)
-- **License:** MIT
-- **Description:** 1.12.2 anarchy client fork of the original Postman with added features and fixes.
-- **Directory:** `postman-reborn/`
-
-### BreadClient
-- **Repository:** [garlic-bred/breadclient](https://github.com/garlic-bred/breadclient)
-- **License:** Custom
-- **Description:** Lightweight Forge 1.12.2 utility mod with client-side enhancements.
-- **Directory:** `breadclient/`
-
-### Hes0y4m
-- **Repository:** [overskillSoldat/Hes0y4m](https://github.com/overskillSoldat/Hes0y4m)
-- **License:** Custom
-- **Description:** 1.12.2 Minecraft hacked client for sword/crystal HvH. Code from WURST+3, Seppuku, Konas, 3arthh4ck, and others.
-- **Directory:** `hes0y4m/`
-
-### Phobos (buildable archive)
-- **Repository:** [Eralp232/PhobosClient-Archive](https://github.com/Eralp232/PhobosClient-Archive)
-- **License:** GPL-3.0
-- **Description:** Archive of Phobos 1.12.2 buildable source code. Originally developed by 3arthqu4ke and Crystallinqq for crystal PvP.
-- **Directory:** `phobos-archive/`
-
-### LiquidBounce (legacy)
-- **Repository:** [CCBlueX/LiquidBounce](https://github.com/CCBlueX/LiquidBounce) (legacy branch)
-- **License:** GPL-3.0
-- **Description:** The classic LiquidBounce for 1.12.2 Forge. Over 2200 stars. One of the most popular free hacked clients.
-- **Directory:** `liquidbounce-legacy/`
-
-### LiquidBounce++
-- **Repository:** [PlusPlusMC/LiquidBouncePlusPlus](https://github.com/PlusPlusMC/LiquidBouncePlusPlus)
-- **License:** GPL-3.0
-- **Description:** Continuation/fork of LiquidBounce for Forge 1.12.2 with additional features.
-- **Directory:** `liquidbounce-plusplus/`
-
-## License & Credits
+## License & Credits :scroll:
 
 Each client retains its original license and authorship. See individual source directories for detailed license information and credits.
 
-This is an educational collection for reference and research purposes only.
+This is an educational collection for reference and research purposes only. Use at your own risk on servers where such modifications are permitted.
+
+---
+
+## Stats :bar_chart:
+- **Total clients:** 50
+- **Total size:** ~300 MB
+- **Licenses:** MIT, GPL-3.0, LGPL-3.0, AGPL-3.0, Apache-2.0, WTFPL, Custom
+- **Languages:** Java, Kotlin, GLSL (shaders)
