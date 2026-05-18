@@ -1,0 +1,27 @@
+[
+  {
+    "modid": "lambda",
+    "name": "Lambda",
+    "description": "λ\nLambda v${version} is a free, open-source, Minecraft ${mcversion} utility mod made for the anarchy experience.\nA visionary plugin system that allows additional modules to be added, without the need to create a Lambda fork!\nCustomize your experience, and improve your efficiency!",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "https://github.com/lambda-client/lambda",
+    "updateUrl": "",
+    "authorList": [
+      "@_constructor",
+      "@huddy987",
+      "@czho_",
+      "@toxicaven",
+      "@nepnepcat",
+      "@scorbett",
+      "@hlsl.",
+      "@itcamefr0mmars",
+      "@romtec",
+      "@save_g",
+      "@enigma_008"
+    ],
+    "credits": "Thanks to 086 for the original KAMI\nThanks to the team of KAMI Blue\nSpecial thanks to all contributors",
+    "logoFile": "lambda.png",
+    "dependencies": []
+  }
+]

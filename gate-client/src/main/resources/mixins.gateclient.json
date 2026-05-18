@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "me.thef1xer.gateclient.mixin.impl",
+  "mixins": [
+    "MixinBlockLiquid",
+    "MixinBlockRendererDispatcher",
+    "MixinChunk",
+    "MixinEntityPlayerSP",
+    "MixinEntityRenderer",
+    "MixinGuiScreen",
+    "MixinNetworkManager",
+    "MixinStateImplementation",
+    "MixinVisGraph"
+  ],
+  "refmap": "mixins.gateclient.refmap.json"
+
+}

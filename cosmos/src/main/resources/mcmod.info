@@ -1,0 +1,38 @@
+[
+  {
+    "modid": "cosmos",
+    "name": "Cosmos",
+    "description": "cope",
+    "version": "1.5.0-beta",
+    "mcversion": "1.12.2",
+    "url": "https://github.com/momentumdevelopment/cosmos",
+    "updateUrl": "https://github.com/momentumdevelopment/cosmos/releases",
+  
+    "authorList": [
+      "bon55", 
+      "linustouchtips", 
+      "doctor swag", 
+      "Hoosiers", 
+      "Sxmurai",
+      "Surge",
+      "Gopro336",
+      "Unfidelity/milo",
+      "Ethius",
+      "Doogie13",
+      "master7720",
+      "Spartan",
+      "perry",
+      "Reap",
+      "KilabGaming",
+      "cattyn",
+      "CrawLeyYou",
+      "HausemasterIssue",
+      "Gav06"
+    ],
+  
+    "credits": "Thanks to SpongePowered's Mixin, Moandjiezana's TOMLJ, Minnced's Discord RPC, Mojang's Brigadier, Litarvan's OpenAuth",
+    "logoFile": "/assets/cosmos/textures/imgs/logotransparentnotext.png",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
