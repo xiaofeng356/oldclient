@@ -1,0 +1,30 @@
+package me.ionar.salhack.gui.ingame;
+
+import me.ionar.salhack.SalHackMod;
+import me.ionar.salhack.events.render.EventRenderGameOverlay;
+import me.ionar.salhack.managers.ModuleManager;
+import me.ionar.salhack.module.ui.ReliantChatModule;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiIngame;
+import net.minecraft.client.gui.ScaledResolution;
+import net.minecraftforge.client.GuiIngameForge;
+import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
+
+public class SalGuiIngame extends GuiIngameForge {
+    public SalGuiIngame(Minecraft mc) {
+        super(mc);
+
+        ObfuscationReflectionHelper.setPrivateValue(GuiIngame.class, this, new SalGuiPlayerTabOverlay(mc, this), "field_175196_v");
+
+        ReliantChatModule mod = (ReliantChatModule) ModuleManager.Get().GetMod(ReliantChatModule.class);
+
+        if (mod != null && mod.isEnabled()) mod.Activate();
+    }
+
+    @Override
+    public void renderGameOverlay(float partialTicks) {
+        super.renderGameOverlay(partialTicks);
+
+        SalHackMod.EVENT_BUS.post(new EventRenderGameOverlay(partialTicks, new ScaledResolution(mc)));
+    }
+}

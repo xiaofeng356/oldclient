@@ -1,0 +1,24 @@
+# Gradle
+.gradle/
+build/
+*/build/
+*/build.gradle
+*/settings.gradle
+*/gradle/
+*/gradlew
+*/gradlew.bat
+*.jar
+*.log
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.class
+*.project
+*.settings
+bin/
+
+# OS
+.DS_Store
+Thumbs.db
