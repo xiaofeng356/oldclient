@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "compatibilityLevel": "JAVA_8",
+  "package": "me.olliem5.past.impl.mixins",
+  "refmap": "mixins.past.refmap.json",
+  "mixins": [
+    "MixinGuiMainMenu",
+    "MixinNetworkManager",
+    "MixinBlockSoulSand",
+    "MixinGuiBossOverlay",
+    "MixinEntityRenderer",
+    "MixinLayerBipedArmor",
+    "MixinPlayerControllerMP",
+    "MixinAbstractClientPlayer",
+    "MixinModelEnderCrystal"
+  ]
+}

@@ -1,0 +1,45 @@
+name: gradle.build
+
+on:
+  push:
+    branches:
+      - "master"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: 8
+          distribution: temurin
+
+      - name: Elevate wrapper permissions
+        run: chmod +x ./gradlew
+
+      - name: Build lambda mod
+        run: ./gradlew --no-build-cache build
+
+      - name: Rename lambda mod
+        run: mv build/libs/lambda-*.jar 5C-lambda-${{ github.run_number }}.jar
+
+      - name: Archive lambda mod
+        uses: actions/upload-artifact@v3
+        with:
+          name: 5C-lambda-${{ github.run_number }}
+          path: 5C-lambda-${{ github.run_number }}.jar
+
+      - name: Release Artifact
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          automatic_release_tag: "latest"
+          title: "Latest Release - ${{ github.run_number }}"
+          files: |
+            5C-lambda-*.jar

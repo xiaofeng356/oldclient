@@ -1,0 +1,34 @@
+Changelog for 1.1.0
+
+Added:
+  - Plugin System
+  - $saveMap command
+  - $copySkin command
+  - AntiGhast module
+  - LogoutSpots module
+  - MainMenu module
+  - IgnoreActive setting in ViewModel module
+  - More easings to the ClickGUI and ArrayList modules
+  - SuperheroFX module
+  - EnchantColour module
+  - LagNotifier HUD module
+  - A panel to the HUD editor
+  - Blur module
+  - NewChunks module
+
+Reworked:
+  - Main Menu
+  - Default ClickGUI
+  - ArrayList module
+  - HoleESP module
+  - AutoCrystal module
+  - The style of most HUD modules
+
+Changed:
+  - Updated the style of the ShulkerViewer module
+  - Merged the Notifier module and DonkeyAlert module into the Alert module
+  - Changed the AutoWalk module's category to Movement
+  - Updated Nametags
+
+Other Changes:
+  - Moved most GUIs to plugins

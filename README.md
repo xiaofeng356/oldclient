@@ -173,8 +173,15 @@ Modules commonly used for crystal PvP:
 | 47 | **FencingFPlusTwo** | `fencingfplustwo/` | Custom | — | — |
 | 48 | **Postman Reborn** | `postman-reborn/` | MIT | — | — |
 | 49 | **TutorialClient** | `tutorialclient/` | Custom | — | — |
-
----
+| 50 | **Ananta** | `ananta/` | Custom | — | — |
+| 51 | **Cranberry** | `cranberry/` | Custom | 8+ | — |
+| 52 | **Paragon** | `paragon/` | Custom | — | `RSHIFT` |
+| 53 | **FrogWare** | `frogware/` | Custom | — | — |
+| 54 | **Past** | `past/` | MIT | — | — |
+| 55 | **Mud** | `mud/` | Custom | — | — |
+| 56 | **OpenSkyrim** | `openskyrim/` | GPL-3.0 | — | — |
+| 57 | **Lambda (5cmc fork)** | `lambda-5cmc/` | LGPL-3.0 | — | `Y` |
+| 58 | **GameSense++** | `gamesenseplusplus/` | GPL-3.0 | — | `RSHIFT` |
 
 ## Quick Reference :memo:
 
@@ -210,7 +217,7 @@ This is an educational collection for reference and research purposes only. Use 
 ---
 
 ## Stats :bar_chart:
-- **Total clients:** 50
+- **Total clients:** 59
 - **Total size:** ~300 MB
 - **Licenses:** MIT, GPL-3.0, LGPL-3.0, AGPL-3.0, Apache-2.0, WTFPL, Custom
 - **Languages:** Java, Kotlin, GLSL (shaders)
