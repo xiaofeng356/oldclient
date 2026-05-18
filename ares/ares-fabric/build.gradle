@@ -1,0 +1,66 @@
+plugins {
+    id "fabric-loom" version "0.8-SNAPSHOT"
+    id "com.github.johnrengelman.shadow" version "7.0.0"
+}
+
+sourceCompatibility = targetCompatibility = JavaVersion.VERSION_17
+
+dependencies {
+    // fabric deps
+    minecraft "com.mojang:minecraft:${project.fabricMinecraftVersion}"
+    mappings "net.fabricmc:yarn:${project.yarnVersion}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.fabricLoaderVersion}"
+
+    implementation "dev.tigr:simpleevents:1.2"
+    implementation 'org.json:json:20211205'
+    implementation "com.github.Vatuu:discord-rpc:1.6.2"
+
+    // ares core
+    implementation project(":ares-core")
+    shadow(project(":ares-core")) {
+        exclude group: "org.apache.logging.log4j", module: "log4j-api"
+        exclude group: "com.mojang", module: "brigadier"
+        exclude group: "com.google.guava", module: "guava"
+    }
+
+    // ares installer
+    implementation(project(":ares-installer"))
+    shadow(project(":ares-installer"))
+
+    // include ares core deps
+    shadow "com.github.Vatuu:discord-rpc:1.6.2"
+
+    // baritone
+    implementation "cabaletta:baritone-api-fabric:1.8.0"
+    shadow "cabaletta:baritone-api-fabric:1.8.0"
+    shadow "cabaletta:baritone-standalone-fabric:1.8.0"
+}
+
+processResources {
+    inputs.property "version", project.version
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+    options.release.set(17)
+}
+
+import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
+task customShadowJar(type: ShadowJar) {
+    configurations = [project.configurations.shadow]
+    from remapJar.archiveFile
+    exclude("mappings/**")
+    exclude("LICENSE")
+    archiveClassifier.set("release")
+
+    //noinspection GroovyAssignabilityCheck
+    manifest {
+        attributes("Main-Class": "dev.tigr.ares.installer.Installer")
+    }
+}
+
+build.dependsOn(customShadowJar)

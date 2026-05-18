@@ -1,0 +1,34 @@
+buildscript {
+    repositories {
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath "gradle.plugin.com.github.jengelman.gradle.plugins:shadow:7.0.0"
+    }
+}
+apply plugin: "com.github.johnrengelman.shadow"
+
+version = project.installerVersion
+
+sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
+
+dependencies {
+    implementation "org.json:json:20211205"
+    shadow "org.json:json:20211205"
+    implementation "li.flor:native-j-file-chooser:1.6.4"
+    shadow "li.flor:native-j-file-chooser:1.6.4"
+    implementation "com.github.FabricMC:fabric-installer:6f0b6c0"
+}
+
+jar {
+    //noinspection GroovyAssignabilityCheck
+    manifest {
+        attributes("Main-Class": "dev.tigr.ares.installer.Installer")
+    }
+}
+
+shadowJar {
+    configurations = [project.configurations.shadow]
+    archiveClassifier.set("release")
+}
+build.dependsOn(shadowJar)

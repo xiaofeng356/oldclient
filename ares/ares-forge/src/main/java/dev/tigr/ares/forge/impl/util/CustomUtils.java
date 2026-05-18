@@ -1,0 +1,113 @@
+package dev.tigr.ares.forge.impl.util;
+
+import com.mojang.authlib.exceptions.AuthenticationException;
+import dev.tigr.ares.core.Ares;
+import dev.tigr.ares.core.event.client.SystemChatMessageEvent;
+import dev.tigr.ares.core.util.AbstractAccount;
+import dev.tigr.ares.core.util.IUtils;
+import dev.tigr.ares.core.util.render.TextColor;
+import dev.tigr.ares.forge.impl.modules.hud.EditHudGui;
+import dev.tigr.ares.forge.impl.modules.movement.Baritone;
+import dev.tigr.ares.forge.mixin.accessor.MinecraftAccessor;
+import dev.tigr.ares.forge.mixin.accessor.TimerAccessor;
+import net.minecraft.client.gui.GuiMainMenu;
+import net.minecraft.client.gui.GuiMultiplayer;
+import net.minecraft.client.gui.GuiOptions;
+import net.minecraft.client.gui.GuiWorldSelection;
+import net.minecraft.realms.RealmsBridge;
+import net.minecraft.util.text.ChatType;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextComponentString;
+
+import java.io.IOException;
+
+import static dev.tigr.ares.Wrapper.MC;
+
+/**
+ * @author Tigermouthbear 11/23/20
+ */
+public class CustomUtils implements IUtils {
+    @Override
+    public void printMessage(String message) {
+        TextComponentString textComponentString = new TextComponentString(message);
+
+        Ares.EVENT_MANAGER.post(new SystemChatMessageEvent(textComponentString.getFormattedText()));
+
+        ITextComponent text;
+        text = new TextComponentString(TextColor.DARK_GRAY + "[" + TextColor.DARK_RED + "Ares" + TextColor.DARK_GRAY + "]" + TextColor.WHITE + " ").appendSibling(textComponentString);
+
+        MC.ingameGUI.addChatMessage(ChatType.SYSTEM, text);
+    }
+
+    @Override
+    public void executeBaritoneCommand(String string) {
+        Baritone.executeCommand(string);
+    }
+
+    @Override
+    public String getPlayerName() {
+        return MC.getSession().getUsername();
+    }
+
+    @Override
+    public void openHUDEditor() {
+        MC.addScheduledTask(() -> MC.displayGuiScreen(new EditHudGui(MC.currentScreen)));
+    }
+
+    @Override
+    public void openTitleScreen() {
+        MC.displayGuiScreen(new GuiMainMenu());
+    }
+
+    @Override
+    public void openSinglePlayerMenu() {
+        MC.displayGuiScreen(new GuiWorldSelection(MC.currentScreen));
+    }
+
+    @Override
+    public void openMultiPlayerMenu() {
+        MC.displayGuiScreen(new GuiMultiplayer(MC.currentScreen));
+    }
+
+    @Override
+    public void openRealmsMenu() {
+        RealmsBridge realmsbridge = new RealmsBridge();
+        realmsbridge.switchToRealms(MC.currentScreen);
+    }
+
+    @Override
+    public void openOptionsMenu() {
+        MC.displayGuiScreen(new GuiOptions(MC.currentScreen, MC.gameSettings));
+    }
+
+
+    @Override
+    public AbstractAccount createAccount(String email, String password, String uuid) throws IOException {
+        return new CustomAccount(email, password, uuid);
+    }
+
+    @Override
+    public AbstractAccount createAccount(String email, String password) throws IOException, AuthenticationException {
+        return new CustomAccount(email, password);
+    }
+
+    @Override
+    public void shutdown() {
+        MC.shutdown();
+    }
+
+    @Override
+    public float getRenderPartialTicks() {
+        return MC.getRenderPartialTicks();
+    }
+
+    @Override
+    public float getTickLength() {
+        return ((TimerAccessor) ((MinecraftAccessor) MC).getTimer()).getTickLength();
+    }
+
+    @Override
+    public void setTickLength(float tickLength) {
+        ((TimerAccessor) ((MinecraftAccessor) MC).getTimer()).setTickLength(tickLength);
+    }
+}

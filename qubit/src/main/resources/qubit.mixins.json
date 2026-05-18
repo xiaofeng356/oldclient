@@ -1,0 +1,27 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "org.quantumclient.qubit.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [],
+  "client": [
+    "MixinKeyboard",
+    "MixinMinecraftClient",
+    "MixinClientConnection",
+    "MixinInGameHud",
+    "MixinCommandSuggestor",
+    "MixinWorldRenderer",
+    "MixinRenderTickCounter",
+    "ILivingEntity",
+    "MixinEntityRenderer",
+    "MixinExplosionS2CPacket",
+    "MixinEntityVelocityUpdateS2CPacket",
+    "MixinGameRenderer",
+    "MixinBlock",
+    "MixinAbstractBlockState",
+    "MixinNarratorManager"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

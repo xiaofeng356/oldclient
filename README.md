@@ -182,6 +182,13 @@ Modules commonly used for crystal PvP:
 | 56 | **OpenSkyrim** | `openskyrim/` | GPL-3.0 | — | — |
 | 57 | **Lambda (5cmc fork)** | `lambda-5cmc/` | LGPL-3.0 | — | `Y` |
 | 58 | **GameSense++** | `gamesenseplusplus/` | GPL-3.0 | — | `RSHIFT` |
+| 59 | **RussianWare** | `russianware/` | Custom | — | — |
+| 60 | **AllahClient** | `allahclient/` | Custom | 7+ | — |
+| 61 | **Ares** | `ares/` | LGPL-3.0 | 188+ | `;` |
+| 62 | **GrassWare.win** | `grassware/` | Custom | — | — |
+| 63 | **FrogHack** | `froghack/` | Custom | — | — |
+| 64 | **Project Dupermen** | `project-dupermen/` | Custom | — | — |
+| 65 | **Qubit** | `qubit/` | Custom | — | — |
 
 ## Quick Reference :memo:
 
@@ -217,7 +224,7 @@ This is an educational collection for reference and research purposes only. Use 
 ---
 
 ## Stats :bar_chart:
-- **Total clients:** 59
+- **Total clients:** 65
 - **Total size:** ~300 MB
 - **Licenses:** MIT, GPL-3.0, LGPL-3.0, AGPL-3.0, Apache-2.0, WTFPL, Custom
 - **Languages:** Java, Kotlin, GLSL (shaders)
