@@ -1,0 +1,38 @@
+Rewrite usage of mutlithreads in ShaderCharms to usage of render entity event
+Gui animations for shadow thing
+Remove shadow rects(gui thing)
+Shaders for CityBoss
+Rewrite Spammer
+Rewrite AutoLog
+Remove WIP and DEBUG categories if we have loader environment
+Cool animation for multiline hud modules
+Glow for hud modules
+Open/close animations for gui
+Animated sliders
+-> Improve ka
+String settings
+AutoEat doesnt work with offhand
+AutoEat uses offhand when it needs to use mainhand
+Armor thing for PopCharms/LogoutSpots
+Rewrite hole processor
+AntiCity
+-> Improve CityBoss block miner
+-> Fix problem with HoleSnap caused by logic of player move event
+Renderer for Surround
+Improve CrystalPvPHelper -> MoveOut for cc
+-> Guide of chroma colors
+Silent for PacketMine -> MultiBreak
+-> Fix crash of hold binds caused by changing bind type to hold
+Fix time logic of fade pattern used in HoleESP
+Wire renderer
+-> Rewrite replace command of schematica with our command system
+Finish RotateModifier
+Finish FreeCamRewrite2
+-> Test ElytraFly
+Remove MixinBlockRenderDispatcher
+Improve PistonAura
+Move AntiBow to Avoid
+-> Finish BlockESP
+-> CrystalFinder subsystem(uses entity update event)
+-> Cache of block states(uses event of BlockRenderDispatcher to update cache)
+-> Finish custom classloader

@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "liquidbounceplusplus",
+    "name": "LiquidBounce++",
+    "description": "A Minecraft 1.8.9 PvP Client with ton of utilities.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "https://plusplus.funniesthvh.uk",
+    "updateUrl": "",
+    "authorList": ["CCBlueX", "exit-scammed", "MongusOrg"],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]

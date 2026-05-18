@@ -131,6 +131,138 @@ The output `.jar` will be located in `build/libs/`.
 - **Description:** A clean new client for Minecraft 1.12.2 using the latest Forge version (14.23.5.2855).
 - **Directory:** `method-client/`
 
+### Seppuku
+- **Repository:** [seppukudevelopment/seppuku](https://github.com/seppukudevelopment/seppuku)
+- **License:** Custom
+- **Description:** Lightweight, dependency-free Minecraft 1.12.2 Forge hack oriented towards anarchy servers with external plugin system.
+- **Directory:** `seppuku/`
+
+### ForgeHax
+- **Repository:** [fr1kin/ForgeHax](https://github.com/fr1kin/ForgeHax)
+- **License:** MIT
+- **Description:** Popular Minecraft cheat running as a Forge mod. Well-known in the anarchy community with comprehensive module set.
+- **Directory:** `forgehax/`
+
+### KAMI (original)
+- **Repository:** [zeroeightysix/KAMI](https://github.com/zeroeightysix/KAMI)
+- **License:** LGPL-3.0
+- **Description:** The original KAMI by zeroeightysix. The foundation that KAMI Blue was built upon. Forge 1.12.2.
+- **Directory:** `kami/`
+
+### MoneyMod
+- **Repository:** [moneymod/moneymod](https://github.com/moneymod/moneymod)
+- **License:** Custom
+- **Description:** 1.12.2 crystal PvP modification. Focused on combat mechanics for anarchy servers.
+- **Directory:** `moneymod/`
+
+### Momentum
+- **Repository:** [momentumdevelopment/momentum](https://github.com/momentumdevelopment/momentum)
+- **License:** GPL-3.0
+- **Description:** Free, open-source 1.12.2 PvP client for the anarchy community. Compatible with Phobos, Pyro, Future, and others.
+- **Directory:** `momentum/`
+
+### Gish Code 1.12.2
+- **Repository:** [GishReloaded/Gish-Code-1.12.2](https://github.com/GishReloaded/Gish-Code-1.12.2)
+- **License:** Custom
+- **Description:** Full-featured 1.12.2 Forge hacked client with extensive modules including Rage, AutoTotem, ESP variants, Scaffold, Nuker, and more.
+- **Directory:** `gish-code/`
+
+### SpectClient
+- **Repository:** [XeonLyfe/SpectClient](https://github.com/XeonLyfe/SpectClient)
+- **License:** MIT
+- **Description:** Minecraft 1.12.2 hacked client inspired by Osiris, Impact, and SalHack. Custom event system and click GUI.
+- **Directory:** `spectclient/`
+
+### Impact 3.0 (community port)
+- **Repository:** [Cats-Club/Impact-3.0](https://github.com/Cats-Club/Impact-3.0)
+- **License:** Custom
+- **Description:** Community port of the popular Impact Client to 1.12.2 Forge with improvements.
+- **Directory:** `impact-3.0/`
+
+### TutorialClient
+- **Repository:** [bush1root/TutorialClient](https://github.com/bush1root/TutorialClient)
+- **License:** Custom
+- **Description:** Minecraft hacked client for 1.12.2 designed as a learning/teaching resource for understanding mod internals.
+- **Directory:** `tutorialclient/`
+
+### FencingFPlusTwo
+- **Repository:** [FencingF/FencingFPlusTwo](https://github.com/FencingF/FencingFPlusTwo)
+- **License:** Custom
+- **Description:** Official FencingF+2 client source for 1.12.2 Forge.
+- **Directory:** `fencingfplustwo/`
+
+### Konas (archive)
+- **Repository:** [Eralp232/KonasClient](https://github.com/Eralp232/KonasClient)
+- **License:** Custom
+- **Description:** Unofficial archive of Konas Client with buildable source code for 1.12.2 Forge. Versions 0.8, 0.10.5, 1.0.1.
+- **Directory:** `konas/`
+
+### Exeter (1.12.2 fork)
+- **Repository:** [evelyn-gosselin/Exeter-1.12.2-fork](https://github.com/evelyn-gosselin/Exeter-1.12.2-fork)
+- **License:** GPL-3.0
+- **Description:** Port of the Exeter utility mod to Minecraft 1.12.2 Forge with cleaned-up decompiled code.
+- **Directory:** `exeter/`
+
+### LavaHack-Forge
+- **Repository:** [TheKisDevs/LavaHack-Forge](https://github.com/TheKisDevs/LavaHack-Forge)
+- **License:** Custom
+- **Description:** Full stack Minecraft cheat for anarchy servers with 200+ modules. Forge edition.
+- **Directory:** `lavahack-forge/`
+
+### Noteless
+- **Repository:** [wuyan1337/Noteless](https://github.com/wuyan1337/Noteless)
+- **License:** GPL-3.0
+- **Description:** Minecraft Forge 1.12.2 hacked client based on Pride. GPL-3.0 licensed.
+- **Directory:** `noteless/`
+
+### Misericordia
+- **Repository:** [Halqq/misericordia-client](https://github.com/Halqq/misericordia-client)
+- **License:** MIT
+- **Description:** In-development Forge 1.12.2 hacked mod with focus on visuals and client GUIs.
+- **Directory:** `misericordia/`
+
+### Postman (legacy)
+- **Repository:** [srgantmoomoo/postman](https://github.com/srgantmoomoo/postman) (legacy branch)
+- **License:** MIT
+- **Description:** Minecraft anarchy client with clean click GUI (PanelStudio), combat, render, and movement modules for Forge 1.12.2.
+- **Directory:** `postman-legacy/`
+
+### Postman Reborn
+- **Repository:** [DRNUMBER1/postman-reborn](https://github.com/DRNUMBER1/postman-reborn)
+- **License:** MIT
+- **Description:** 1.12.2 anarchy client fork of the original Postman with added features and fixes.
+- **Directory:** `postman-reborn/`
+
+### BreadClient
+- **Repository:** [garlic-bred/breadclient](https://github.com/garlic-bred/breadclient)
+- **License:** Custom
+- **Description:** Lightweight Forge 1.12.2 utility mod with client-side enhancements.
+- **Directory:** `breadclient/`
+
+### Hes0y4m
+- **Repository:** [overskillSoldat/Hes0y4m](https://github.com/overskillSoldat/Hes0y4m)
+- **License:** Custom
+- **Description:** 1.12.2 Minecraft hacked client for sword/crystal HvH. Code from WURST+3, Seppuku, Konas, 3arthh4ck, and others.
+- **Directory:** `hes0y4m/`
+
+### Phobos (buildable archive)
+- **Repository:** [Eralp232/PhobosClient-Archive](https://github.com/Eralp232/PhobosClient-Archive)
+- **License:** GPL-3.0
+- **Description:** Archive of Phobos 1.12.2 buildable source code. Originally developed by 3arthqu4ke and Crystallinqq for crystal PvP.
+- **Directory:** `phobos-archive/`
+
+### LiquidBounce (legacy)
+- **Repository:** [CCBlueX/LiquidBounce](https://github.com/CCBlueX/LiquidBounce) (legacy branch)
+- **License:** GPL-3.0
+- **Description:** The classic LiquidBounce for 1.12.2 Forge. Over 2200 stars. One of the most popular free hacked clients.
+- **Directory:** `liquidbounce-legacy/`
+
+### LiquidBounce++
+- **Repository:** [PlusPlusMC/LiquidBouncePlusPlus](https://github.com/PlusPlusMC/LiquidBouncePlusPlus)
+- **License:** GPL-3.0
+- **Description:** Continuation/fork of LiquidBounce for Forge 1.12.2 with additional features.
+- **Directory:** `liquidbounce-plusplus/`
+
 ## License & Credits
 
 Each client retains its original license and authorship. See individual source directories for detailed license information and credits.
